@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/alba/css/style.css" type="text/css">
+<link rel="stylesheet" href="/alba/css/forms.css" type="text/css">
+<link rel="stylesheet" href="/alba/css/tabs.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Alba</title>
+</head>
+<body>
+
+	<div class = "nav-top"><!--top menu-->
+			<a href ="/alba/forms/login.php">Log in</a>
+			<a href="/alba/forms/register.php">Register</a>
+			
+		<div class="dropdown"><!--languages-->
+			<button class="dropbtn">Language<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+				<a href="#">English</a>
+				<a href="#">French</a>
+				<a href="#">German</a>
+			</div><!--dropdown-content-->
+		</div><!--dropdown-->
+	
+		<div class="currency">
+			<button class="dropbtn">Currency<i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+				<a href="#">pound</a>
+				<a href="#">euro</a>
+				</div><!--dropdown-content1-->
+		</div>	<!--currency-->	
+		
+	</div><!--nav-top-->
+	
+	
+	<div class="header"><!--logo and search-->
+		<div class="logo"><!--logo-->
+		<a href="/alba/index.php"><img src = "/alba/images/logo61.png" alt="logo"/></a>
+		</div><!--end logo-->
+		
+		
+		<div class="search-container"><!--search-->
+			<form action="#">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit">Submit</button>
+			</form>
+		</div><!--search-container-->
+	</div><!--header logo and search-->
+	
+	<div class="nav-bottom" id="navBottom"><!--all links-->
+		<a href = "/alba/index.php" class ="active">Home</a>
+		
+		<div class="bottom-dropdown">
+			<button class="bottom-dropbtn">The Islands<i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href ="/alba/view/eigg.php">Isle of Eigg</a>
+				<a href ="/alba/view/rum.php">Isle of Rum</a>
+				<a href ="/alba/view/muck.php">Isle of Muck</a>
+			</div><!--bottom-dropdown-content-->
+		</div><!--bottom-dropdown-->
+		
+		<a href = "/alba/view/timetable.php">Timetable&Fares</a>
+		<a href = "/alba/view/faq.php">FAQ&Frequent travellers</a>
+		<a href = "/alba/contact/contact.php">Contact Us</a>
+		
+		<div class="nav-bottom-right">
+		<a href="#">Buy Ticket</a>
+		</div><!--nav-bottom-right-->
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div><!--nav-bottom-->
+	
+	
+	

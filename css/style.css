@@ -1,0 +1,381 @@
+
+body{
+	font-family: Times, Times New Roman, Georgia, serif;
+	font-size: 18px;
+}
+
+html {
+	box-sizing: border-box;
+	
+}
+
+/*full page blue background */
+.index-content{
+	background-color: #0066cc;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.nav-top, .nav-bottom {
+	overflow: hidden;
+	background-color: #1a8cff;	
+}
+
+.nav-top a{
+	float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown, .currency{
+	float: right;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn,.currency .dropbtn,.bottom-dropdown .bottom-dropbtn {    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+	font-size: 13px;
+}
+
+.nav-top a:hover,.nav-bottom  a:hover, .dropdown:hover .dropbtn ,.currency:hover .dropbtn, .bottom-dropdown:hover .bottom-dropbtn{
+    background-color: white;
+	color: #1a8cff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a8cff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #e6f2ff;
+	color: #1a8cff;
+}
+
+.dropdown:hover .dropdown-content,.currency:hover .dropdown-content{
+    display: block;
+}
+
+.header {
+	overflow: hidden;
+	background-color: #ffffff;
+}
+ 
+.header a{
+	float: left;	 
+ }
+.logo {
+	
+     background-repeat: no-repeat;
+     background-position: left top;
+     padding-top:5px;
+ }
+ 
+.search-container{
+	float: right;
+	padding-bottom:3px;
+}
+ 
+ .search-container input[type=text] {
+	width: 70%;
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.header .search-container button {
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	background-color: #ff0000;
+	color: #ffffff;
+}
+
+.header .search-container button:hover, .nav-bottom-right a:hover {
+  background: #800000;
+  color: white;
+}
+
+.nav-bottom .active{
+	 background-color: #003e80;
+	 color: white;
+}
+
+.nav-bottom a{
+	float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bottom-dropdown{
+	float: left;
+}
+
+.bottom-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.nav-bottom-right {
+	float: right;
+	background-color: #ff0000;
+	font-size: 20px;
+}
+
+.bottom-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/**************************/
+
+
+.nav-bottom .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .nav-bottom a, .bottom-dropdown .bottom-dropbtn,.nav-bottom-right a, .nav-top .dropdown, .nav-top .currency, .header .logo a,.header .search-container{
+    display: none;
+  }
+  .nav-bottom a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bottom.responsive {position: relative;}
+  .nav-bottom.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .nav-bottom.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav-bottom.responsive .bottom-dropdown {float: none;}
+   .nav-bottom.responsive .nav-bottom-right {float: none;}
+  .nav-bottom.responsive .dropdown-content {position: relative;}
+    .nav-bottom.responsive .nav-bottom-right {position: relative;}
+  .nav-bottom.responsive .bottom-dropdown .bottom-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/**************************/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+     background-image: url("/alba/images/main.jpg");
+    /* Full height */
+   
+    /* Center and scale the image nicely */
+    height: 70%; 
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*images index page*/
+.eigg, .rum, .muck {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+ .eigg, .rum, .muck {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+	text-align: center;
+	padding: 0 16px;
+}
+
+.container::after, .islands::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title h2{
+	color: #ff0000;
+	
+}
+.title a{
+	text-decoration: none;
+}
+
+ p.text{
+  color: #ff0000;
+}
+
+.title h2:hover {
+  color: #800000;
+}
+
+/*white container*/
+.content {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+	background-color: #e6f3ff;
+}
+/*user page white naroow content*/
+.content-user {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+	background-color: #ffffff;
+}
+
+.heading{
+	color: #004080;
+	text-align: center;
+	padding: 20px 20px;
+}
+
+.index-p p {
+	font-size: 120%;
+    line-height: 1.8;
+	text-align: center;
+	color: #003366;
+}
+
+/*eigg rum muck*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*contact fqa */
+.contact-content, .fqa-content{
+	color: #004080;
+	font-size: 100%;
+    line-height: 0.7;
+}
+
+.contact-content h1, .faq-content h1{
+	color: #004080;
+	text-align: center;
+	padding: 10px 30px;
+}
+
+.contact-content  h2, .faq-content  h2,.faq-content  h3 {
+	color: #004080;
+	text-align: left;
+	padding: 3px 10px;
+}
+
+.contact-content p {	
+	padding: 0 10px;
+}
+
+.faq-content  h3 {
+	letter-spacing: 0.1em;
+}
+.faq-content p {	
+	padding: 0 10px;
+	color: #404040;
+}
+
+
+
+
+
+
+

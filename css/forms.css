@@ -1,0 +1,247 @@
+* {box-sizing: border-box;}
+
+.male {
+    display: block;
+	position: relative;
+	margin-top: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.form input[type=text],.form input[type=email],.form select,.form textarea,.form  input[type=password] {
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #004d99;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+	display: inline-block;
+	
+}
+
+.form input[type=text]:focus,.form input[type=email]:focus,.form  input[type=password]:focus {
+    background-color: #f2f2f2;
+    outline: none;
+}
+.form button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+	margin: 8px 0;
+    border: none;
+	opacity: 0.9;
+    border-radius: 4px;
+    cursor: pointer;
+	font-size: 110%;
+	width: 30%;
+	margin-top: 25px;
+	float: left;
+}
+
+.form button:hover {
+    background-color: #ff0000;
+	color: white;
+	opacity:1;
+}
+
+.submit1  button {
+  width: 60%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+     .submit button, .submit1 button {
+       width: 100%;
+    }
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.form {
+	font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+	color: #004080;
+    padding: 10px;
+	width: 60%;
+	font-size: 100%;
+	
+}
+
+.warning_css{
+	color: red;
+}
+.help-block{
+	color: red;
+	padding: 0 10px 10px 3px;
+}
+.form-confirm-message {
+	color: #e60000;
+	text-align: left;
+	padding: 10px 20px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.link a{
+	color: #006bb3; 
+	text-align: center;
+	padding: 14px 10px;
+	font-size: 110%;
+	
+}
+
+
+.link a:hover, .form a:hover {
+  color:  #ff0000;
+}
+
+.forms-head h2{
+	color: #004080;
+	padding: 3px 10px;
+}
+
+.forms-head p{
+	color: #006bb3;
+	padding: 0 10px;
+	font-size: 110%;
+}
+.form a{
+	color: #006bb3; 
+}
+
+/*users responsive nav menu*/
+.nav-user {
+	overflow: hidden;
+	background-color:#1a8cff;	
+	
+}
+
+
+.nav-user a {
+	float: left;
+	display: block;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-user a:hover {
+	background-color: white;
+	color: #1a8cff;
+}
+
+.nav-user .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-user a:not(:first-child) {display: none;}
+  .nav-user a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-user.responsive {position: relative;}
+  .nav-user.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-user.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* end responsive nav users*/
+p.invite{
+	font-family:"Courier New",Courier,monospace;
+	text-transform:uppercase;
+	letter-spacing:0.2 em;
+	padding-bottom:10px;
+	font-size: 110%;
+	color:  #9900ff;
+	font-weight:bold;
+}
+
+p.red, p.red a {
+	color: #ff0000;
+}
+p.red a:hover {
+	color:  #660000;
+}
+.user-header,.admin-header {
+	color: #004080;
+	text-align: left;
+	padding: 3px 10px;
+	font-size: 110%;
+}
+
+
+.user-header h1{
+	letter-spacing: 0.1em;
+}
+
+.user-header h3, .admin-header h4 {
+	color: #ff0000;
+}
+.user-header table{
+	border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.user-header th,.user-header td {
+    text-align: left;
+    padding: 8px;
+	color: #004080;
+}
+
+/*.user-header tr:nth-child(even){background-color: #f2f2f2}*/
+
+.admin-header table{
+	border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid #595959;
+	margin-top: 80px;
+	margin-bottom: 1px;
+    margin-right: 3px;
+    margin-left: 1px;
+}
+
+.admin-header th,.admin-header td {
+	color: #333333;
+    text-align: left;
+    padding: 16px;
+	border: 1px solid #595959;
+}
+
+.admin-header tr:nth-child(odd) {
+    background-color:  #d9d9d9;
+}
+
+.trip-help-block {
+	font-family: Arial, Helvetica, sans-serif;
+	color:  #cc0000;
+	letter-spacing:0.2 em;
+	padding-bottom:10px;
+	font-size: 110%;
+	font-weight:bold;
+	line-height: 1.6;
+	
+}
