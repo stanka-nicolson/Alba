@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 function debug($thingy){
 		echo "<pre>";print_r($thingy);echo "</pre>";
 	}
-	$host = "localhost";
-	$mysql_user = "root";
-	$mysql_password = "tania";
-	$mysql_database = "alba";
+	$host = "";
+	$mysql_user = "";
+	$mysql_password = "";
+	$mysql_database = "";
 	
 	// this is the connection object
 	$mysqli = new mysqli($host, $mysql_user, $mysql_password, $mysql_database);
